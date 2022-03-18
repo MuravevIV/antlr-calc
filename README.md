@@ -43,7 +43,8 @@ java -jar target/antlr-calc-1.0-SNAPSHOT.jar --expression="4 * (2 + 3)"
 - Lexer: [CalcLexer.g4](src/main/antlr4/com/ilyamur/antlrcalc/CalcLexer.g4)
 - Parser: [CalcParser.g4](src/main/antlr4/com/ilyamur/antlrcalc/CalcParser.g4)
 
-## Interpreter (visitor)
+## Java files
 
-- Implementation: [CalcParserVisitorImpl.java](src/main/java/com/ilyamur/antlrcalc/parser/CalcParserVisitorImpl.java)
-- Tests: [CalcParserVisitorCalculatorTest.java](src/test/java/com/ilyamur/antlrcalc/service/CalcParserVisitorCalculatorTest.java)
+- Interpreter implementation: [CalcParserVisitorImpl.java](src/main/java/com/ilyamur/antlrcalc/parser/CalcParserVisitorImpl.java)
+- Component implementation: [CalcParserVisitorCalculator.java](src/main/java/com/ilyamur/antlrcalc/service/CalcParserVisitorCalculator.java)
+- Component tests: [CalcParserVisitorCalculatorTest.java](src/test/java/com/ilyamur/antlrcalc/service/CalcParserVisitorCalculatorTest.java)
